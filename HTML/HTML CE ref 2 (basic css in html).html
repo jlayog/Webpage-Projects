@@ -1,0 +1,112 @@
+<!---
+2.1: Basic CSS in HTML form
+common commands that you shouldn't forget
+--->
+
+
+<!--- include *style="color: (color name);" in the selected element 
+                             Example:                              --->
+
+
+<h2 style="color: orange;"> This is how you add colors to HTML elements. </h2>
+
+
+
+<!--- styling multiple elements with <style> </style>
+      Example: --->
+      
+
+<style>
+ h2 {color: blue;}
+</style> 
+
+
+
+<!--- 
+2.2: Using classes to style elements.
+First, define the class, then define the attributes for the class
+Example attributes: 
+--->
+
+<style>
+.gator-text {
+    color: green;
+    font-size: 30px;
+    font-family: cursive;    
+}
+</style>
+
+<h2 class="gator-text"> Go Gators! </h2>
+
+
+
+<!--- 
+2.3: Overriding class declarations with id attributes
+hint: don't forget '#'
+Example: 
+--->
+
+<div>
+<style> 
+    body {
+        font-family: fantasy;
+        color: black;
+    }
+    .example-class {
+        color: coral;
+    }
+    .example-class-2 {
+        color: darkred;
+    }
+    #example-override {
+        color: fuchsia;
+    }
+</style>
+
+<p class="example-class example-class-2" id="example-override"> This text should appear as fuchsia. </p>
+</div>
+
+
+
+
+
+<!--- 
+2.4: Importing fonts and degrading fonts
+Google fonts = free library of fonts using URL
+Example: Font URL goes at the top of the editor before the style element
+If a font is not linked or not available, provide an alternative font
+--->
+
+
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+
+<style>
+    .chocolate-text {
+        color: chocolate;
+    }
+    p {
+        font-size: 25px;
+        font-family: Kosugi Maru, fantasy;
+    }
+</style>
+
+<p class="chocolate-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui 
+    ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci 
+    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

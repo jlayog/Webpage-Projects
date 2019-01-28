@@ -1,2 +1,3 @@
-# Webpage-Projects
-Projects built using mostly HTML and CSS
+# HTML, HTML5, CSS exercise references
+
+Useful references for HTML, HTML5, CSS from exercises

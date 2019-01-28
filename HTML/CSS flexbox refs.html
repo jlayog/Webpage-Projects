@@ -1,0 +1,135 @@
+<!--- 
+Making navigatable links with HTML Access Keys
+Shortcut key to navigate to certain elements. Makes access to keyboard-only users easier.
+Can be used as an attribute.
+Example:
+--->
+
+
+<button accesskey="b">Example button access key</button>
+
+<h2><a id="example" href="" button accesskey="b"> Any text goes here </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- Flexbox, flex-direction, aligning elements
+useful for organization the properties of elements
+--->
+
+<style>
+    #example-element {
+        display: flex;
+        flex-direction: reverse-row; /*could acutally be column, row, reverse-row */
+        justify-content: center; 
+        /*    fills all space and space out the flex in the direction you want (center, flex-start (aligns items to the start), flex-end (aligns items to the end), 
+        space-between (aligns items to the center of the main axis, with an extra space between them), space-around (first and last items are not locked to the edges of the container, 
+        space is distributed evenly)) */
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+<!--- 
+Align-items property using: flex-start, flex-end, center, stretch (stretches items to fill containter), and baseline (think of it as the line that letters sit on)
+--->
+
+<style> 
+    #another-example {
+    display: flex;
+    align-items: baseline; 
+    }
+</style>
+<!--- You can also use align-self to adjust each item's alignment individually --->
+
+
+
+
+
+
+<!--- Using flex-wrap, flex-shrink, flex-grow, flex-basis properties --->
+
+
+<style>
+    #container-example {
+        display: flex;
+        flex-wrap: nowrap; /* wrap (left-right)/wrap-reverse(bottom-top) */
+        flex-shrink: /* value (0,1,2, etc goes here) */
+        flex-grow: /*- same as above */
+        flex-basis: /* uses px, em, %, or auto */
+    }
+</style>
+
+
+
+
+
+
+<!--- to shorthand flex properties, they go in order by grow, shrink, basis --->
+
+<style>
+    #flex-shorthand {
+        flex: 1 0 10px /* sets item to flex-grow: 1; flex-shrink: 0; flex-basis: 10px; */
+    }
+</style>
+
+
+
+
+
+
+<!--- using order properties to rearrange items, which will go in order by direction according to value --->
+
+<style>
+    order-example {
+        order: 1;
+    }
+    order-example-2 {
+        order: 2;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!--- 
+Turn any HTML element into a CSS grid container by setting its display property to grid.
+In CSS Grid, parent element is referred to as container, and children are items.
+--->
+
+
+<style> 
+    .container {
+        font-size: 25px; 
+        width: 100%;
+        background: lightpink;
+        display: grid;
+    }
+</style>
+
+
+
+<!---
+Grid templates: using rows, columns, and gaps
+Depending on how many rows/columns you want to make
+Adjusting size
+--->
+
+<style>
+    .item1 {background:LightSkyBlue;}
+    .item2 {background:LightSalmon;}
+    .item3 {background:PaleTurquoise;}
+    .item4 {background:LightPink;}
+    .item5 {
+        background: PaleGreen;
+     /* you can also control the amount of columns/rows an item will consume by using grid-column/row property */
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .container {
+        display: grid;
+        grid-template-column: 100px 100px 100px; /* creates 3 columns */
+        grid-template-rows: 50px 50px; /* creates 2 rows in those sizes */
+        grid-column-gap: 20px; /* creates 20px empty space between all columns */
+        grid-row-gap: 10px; 
+    } 
+    
+    .container-2 {
+        display: grid; 
+        grid-template-column: 1fr 100px 2fr; /* 3 columns created. fr = sets column to a fraction of available space, auto = sets column to width
+        or height automatically, % = adjusts the column to the percent width of its container) */
+            /* you may also use shorthand of grid gaps by using grid-gap (which is rows, then columns respectively, or leave just one value for both simultaneously) */
+        grid-gap: 10px 20px;
+    }
+</style>
+
+<div class="container">
+  <div class="item1">Example 1</div>
+  <div class="item2">Example 2</div>
+  <div class="item3">Example 3</div>
+  <div class="item4">Example 4</div>
+  <div class="item5">Example 5</div>
+</div>
+
+
+
+
+
+<!---
+Aligning item horizontally using justify-self
+Property values include: start, center, end
+--->
+
+<style>
+item6 {
+    background: LightSalmon;
+    justify-self: center; /* You can use justify-items with the listed property values, to align all items horizontally. Alternatively for rows, use align-items */
+  }
+</style>
+
+
+
+<!--- Group cells together and label them using grid-template-areas --->
+
+<style> 
+    .item1 {
+        background:LightSkyBlue;
+        }
+    .item2 {
+        background:LightCrimson;
+        }
+    .item3 {
+        background:PaleYellow;
+        grid-area: footer; /* By doing this places the item in a custom area by referencing the name you gave it */
+    }
+    .item4 {
+        background:LightChocolate;
+    }
+    .item5 {background:Fuchsia
+    }
+
+    .container-3 {
+        font-size: 40px;
+        min-height: 300px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      
+        grid-template-areas:
+          "header header header"
+          ". content content" /* adding ( . ) to designate an empty cell */
+          "footer footer footer";      
+          }
+</style> 
+
+<div class="container-3">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">This will appear at the bottom</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
