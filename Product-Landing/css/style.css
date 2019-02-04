@@ -1,0 +1,131 @@
+body {
+    background-color: #f1e3cc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+p {
+    font-family: 'Special Elite', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+header {
+    font-family: 'Monofett', cursive;
+    font-size: 2.8rem;
+    font-color: #141414;
+    border-sizing: border-box;
+    padding: 2px 0 2px 0;
+    background-image: url('/Webpage-Projects/Product-Landing/images/paper.jpg');
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #583f2f;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-family: 'Inconsolata', cursive;
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    border-right: 1px solid #bbb;
+}
+
+.active {
+    background-color: #2f190a;
+}
+
+li a:hover {
+    background-color: #2f190a;
+    border-radius: 7px;
+}
+
+#login {
+    float: right;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    padding: 1rem 0 1rem 0;
+}
+
+#home img {
+    width: 32rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+#featured {
+    align-content: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4em;
+}
+
+.product-description img {
+    width: 28rem;
+    height: auto;
+    object-fit: contain;
+}
+
+h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'Special Elite', cursive;
+}
+
+.product-description p {
+    width: 425px;
+}
+
+.email {
+    width: 250px;
+    height: 30px;
+    bottom: 25px;
+}
+
+.submit {
+    padding: 0 20px;
+    height: 40px;
+    font-family: 'Inconsolata', cursive;
+    font-size: 18px;
+    font-weight: 900;
+    color: #f1e3cc;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background: #583f2f;
+    cursor: pointer; 
+}
+
+
