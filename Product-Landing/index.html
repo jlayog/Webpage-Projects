@@ -28,12 +28,12 @@
             </nav>
         </div> 
         <section id="home">
-            <div> <!-- Home page description -->
+            <div tabindex="0"> <!-- Home page description -->
                 <h2>Old-fashioned Typewriters with a Modern Twist</h2>
                 <img src="images/typewriterimg1.jpg" alt="Typewriter on a wooden table">
             </div>
         </section>
-        <section id="featured">
+        <section tabindex="1" id="featured">
             <div> <!-- Featured description and example product images -->
                 <p>Lipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum nunc ut laoreet congue. Pellentesque at tortor tristique, porttitor diam imperdiet, semper massa. 
                     Vestibulum facilisis nulla ante, et semper diam porta sed. Proin vel quam porta, faucibus risus non, fringilla lectus. Pellentesque vel pulvinar magna, id rhoncus ante. 
@@ -43,7 +43,7 @@
                     Ut sed lorem consectetur, maximus nisl vitae, volutpat augue.
                 </p>
                 <div class="product-grid"> <!-- Product image flexbox grid-->
-                    <div class="product-description"> <!-- Product descriptions-->
+                    <div tabindex="2" class="product-description"> <!-- Product descriptions-->
                         <img src="images/typewriterimg2.jpg" alt="typewriter product 1">
                         <h3>$75</h3>
                         <h4>1 left in stock!</h4>
@@ -51,14 +51,14 @@
                             Ut accumsan, ex et congue hendrerit, leo neque tincidunt neque, eu suscipit orci quam molestie metus.
                         </p>
                     </div>
-                    <div class="product-description">
+                    <div tabindex="3" class="product-description">
                         <img src="images/typewriterimg3.jpg" alt="typewriter product 2">
                         <h3>$115</h3>
                         <p>Donec et leo hendrerit, eleifend nunc id, vehicula nisl. Quisque sodales odio eget leo commodo ultrices. 
                             Fusce vel mattis metus. Sed vel lacus eget sem porttitor hendrerit.
                         </p>
                     </div>
-                    <div class="product-description">
+                    <div tabindex="4" class="product-description">
                         <img src="images/typewriterimg4.jpg" alt="typewriter product 3">
                         <h3>$100</h3>
                         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -69,16 +69,16 @@
             </div> <!-- Featured end -->
         </section>
         <section id="video"> <!-- Video -->
-            <div class="tutorial">
+            <div tabindex="5" class="tutorial">
                 <h3>How to use a typewriter</h3>
-                <iframe width="720" height="400" src="https://youtube.com/embed/FkUXn5bOwzk" alt="a video explaining how to use a typewriter">placeholder</iframe>
+                <iframe tabindex="-1" width="720" height="400" src="https://youtube.com/embed/FkUXn5bOwzk" alt="a video explaining how to use a typewriter">placeholder</iframe>
             </div>
         </section>
         <section id="subscription"> <!-- Subscription info -->
             <h3>Would you like to subscribe to our newsletter?</h3>
-            <form> <!-- Newsletter form start-->
-                <input class="email" name="email" type="email" placeholder=" example@email.com" required>
-                <input class="submit" type="submit" value="Yes please!">
+            <form tabindex="6"> <!-- Newsletter form start-->
+                <input tabindex="-1" class="email" name="email" type="email" placeholder=" example@email.com" required>
+                <input tabindex="-1" class="submit" type="submit" value="Yes please!">
             </form>
         </section>
     </body>
